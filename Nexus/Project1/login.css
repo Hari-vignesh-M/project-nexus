@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    /* background-color: #f2f2f2; */
+    background-image: url(unplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+     align-items: center; 
+    height: 100vh;
+    margin: 0;
+    
+}
+.form-container {
+    position: relative;
+    animation: move-left-to-right 5s;
+  }
+  
+  @keyframes move-left-to-right {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #4e514c63;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #ffff;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+ button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+
+button {
+    /* background-color: #4CAF50; */
+    background-color: #ff8604;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #FFBA00;
+}
+
+.message {
+    text-align: center;
+    color: #ffff;
+}
+
+.message a {
+    color: #ff8604;
+    text-decoration: none;
+}
+
+.message a:hover {
+    text-decoration: underline;
+}
